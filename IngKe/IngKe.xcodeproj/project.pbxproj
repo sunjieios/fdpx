@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4AFE59BC5463DB63360FCC7E /* libPods-IngKe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55A4C99B8C24994DB085B425 /* libPods-IngKe.a */; };
+		4CF9EBE11DDD837000287EB0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF9EBE01DDD837000287EB0 /* main.m */; };
+		4CF9EBE41DDD837000287EB0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF9EBE31DDD837000287EB0 /* AppDelegate.m */; };
+		4CF9EBEC1DDD837000287EB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CF9EBEB1DDD837000287EB0 /* Assets.xcassets */; };
+		4CF9EC0C1DDD871900287EB0 /* SJBaseTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF9EC0B1DDD871900287EB0 /* SJBaseTabbarController.m */; };
+		4CF9EC161DDD903E00287EB0 /* SJTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF9EC151DDD903E00287EB0 /* SJTabBar.m */; };
+		4CF9EC1C1DDD90B900287EB0 /* SJBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF9EC1B1DDD90B900287EB0 /* SJBaseViewController.m */; };
+		4CF9EC1F1DDD9B6300287EB0 /* SJNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF9EC1E1DDD9B6300287EB0 /* SJNavigationController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2CFE84401CD9C9C792E92BFB /* Pods-IngKe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IngKe.release.xcconfig"; path = "Pods/Target Support Files/Pods-IngKe/Pods-IngKe.release.xcconfig"; sourceTree = "<group>"; };
+		4674082BE8A0803789801A9D /* Pods-IngKe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IngKe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IngKe/Pods-IngKe.debug.xcconfig"; sourceTree = "<group>"; };
+		4CF9EBDC1DDD837000287EB0 /* IngKe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IngKe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CF9EBE01DDD837000287EB0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4CF9EBE21DDD837000287EB0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
+		4CF9EBE31DDD837000287EB0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../../AppDelegate.m; sourceTree = "<group>"; };
+		4CF9EBEB1DDD837000287EB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4CF9EBF01DDD837000287EB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CF9EC0A1DDD871900287EB0 /* SJBaseTabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJBaseTabbarController.h; sourceTree = "<group>"; };
+		4CF9EC0B1DDD871900287EB0 /* SJBaseTabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJBaseTabbarController.m; sourceTree = "<group>"; };
+		4CF9EC101DDD8B5B00287EB0 /* IngKe.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IngKe.pch; sourceTree = "<group>"; };
+		4CF9EC131DDD8D2200287EB0 /* SJMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SJMacros.h; sourceTree = "<group>"; };
+		4CF9EC141DDD903E00287EB0 /* SJTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJTabBar.h; sourceTree = "<group>"; };
+		4CF9EC151DDD903E00287EB0 /* SJTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJTabBar.m; sourceTree = "<group>"; };
+		4CF9EC1A1DDD90B900287EB0 /* SJBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJBaseViewController.h; sourceTree = "<group>"; };
+		4CF9EC1B1DDD90B900287EB0 /* SJBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJBaseViewController.m; sourceTree = "<group>"; };
+		4CF9EC1D1DDD9B6300287EB0 /* SJNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJNavigationController.h; sourceTree = "<group>"; };
+		4CF9EC1E1DDD9B6300287EB0 /* SJNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJNavigationController.m; sourceTree = "<group>"; };
+		55A4C99B8C24994DB085B425 /* libPods-IngKe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IngKe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4CF9EBD91DDD837000287EB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AFE59BC5463DB63360FCC7E /* libPods-IngKe.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24404B4422D9C7E018EB9B69 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4674082BE8A0803789801A9D /* Pods-IngKe.debug.xcconfig */,
+				2CFE84401CD9C9C792E92BFB /* Pods-IngKe.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4CF9EBD31DDD837000287EB0 = {
+			isa = PBXGroup;
+			children = (
+				4CF9EBDE1DDD837000287EB0 /* IngKe */,
+				4CF9EBDD1DDD837000287EB0 /* Products */,
+				24404B4422D9C7E018EB9B69 /* Pods */,
+				647DC2E7BE903FA434B07519 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4CF9EBDD1DDD837000287EB0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4CF9EBDC1DDD837000287EB0 /* IngKe.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4CF9EBDE1DDD837000287EB0 /* IngKe */ = {
+			isa = PBXGroup;
+			children = (
+				4CF9EBF61DDD850900287EB0 /* Class */,
+				4CF9EBDF1DDD837000287EB0 /* Supporting Files */,
+			);
+			path = IngKe;
+			sourceTree = "<group>";
+		};
+		4CF9EBDF1DDD837000287EB0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4CF9EBEB1DDD837000287EB0 /* Assets.xcassets */,
+				4CF9EBF01DDD837000287EB0 /* Info.plist */,
+				4CF9EBE01DDD837000287EB0 /* main.m */,
+				4CF9EC101DDD8B5B00287EB0 /* IngKe.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4CF9EBF61DDD850900287EB0 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				4CF9EBF71DDD850900287EB0 /* Base */,
+				4CF9EBF81DDD850900287EB0 /* Helpers */,
+				4CF9EBFB1DDD850900287EB0 /* Lib */,
+				4CF9EBFC1DDD850900287EB0 /* Live */,
+				4CF9EBFF1DDD850900287EB0 /* Me */,
+				4CF9EC031DDD850900287EB0 /* NetWork */,
+				4CF9EC041DDD850900287EB0 /* Other */,
+				4CF9EC051DDD850900287EB0 /* Show */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		4CF9EBF71DDD850900287EB0 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				4CF9EC191DDD905900287EB0 /* Controller */,
+				4CF9EC181DDD904E00287EB0 /* View */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		4CF9EBF81DDD850900287EB0 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4CF9EBF91DDD850900287EB0 /* Categories */,
+				4CF9EBFA1DDD850900287EB0 /* Tools */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		4CF9EBF91DDD850900287EB0 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		4CF9EBFA1DDD850900287EB0 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		4CF9EBFB1DDD850900287EB0 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		4CF9EBFC1DDD850900287EB0 /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				4CF9EBFD1DDD850900287EB0 /* ViewControllers */,
+				4CF9EBFE1DDD850900287EB0 /* Views */,
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		4CF9EBFD1DDD850900287EB0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4CF9EBFE1DDD850900287EB0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4CF9EBFF1DDD850900287EB0 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				4CF9EC001DDD850900287EB0 /* Models */,
+				4CF9EC011DDD850900287EB0 /* ViewControllers */,
+				4CF9EC021DDD850900287EB0 /* Views */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		4CF9EC001DDD850900287EB0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4CF9EC011DDD850900287EB0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4CF9EC021DDD850900287EB0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4CF9EC031DDD850900287EB0 /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
+		4CF9EC041DDD850900287EB0 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				4CF9EBE21DDD837000287EB0 /* AppDelegate.h */,
+				4CF9EBE31DDD837000287EB0 /* AppDelegate.m */,
+				4CF9EC131DDD8D2200287EB0 /* SJMacros.h */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		4CF9EC051DDD850900287EB0 /* Show */ = {
+			isa = PBXGroup;
+			children = (
+				4CF9EC061DDD850900287EB0 /* Handlers */,
+				4CF9EC071DDD850900287EB0 /* Models */,
+				4CF9EC081DDD850900287EB0 /* ViewControllers */,
+				4CF9EC091DDD850900287EB0 /* Views */,
+			);
+			path = Show;
+			sourceTree = "<group>";
+		};
+		4CF9EC061DDD850900287EB0 /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Handlers;
+			sourceTree = "<group>";
+		};
+		4CF9EC071DDD850900287EB0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4CF9EC081DDD850900287EB0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4CF9EC091DDD850900287EB0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4CF9EC181DDD904E00287EB0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4CF9EC141DDD903E00287EB0 /* SJTabBar.h */,
+				4CF9EC151DDD903E00287EB0 /* SJTabBar.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4CF9EC191DDD905900287EB0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4CF9EC0A1DDD871900287EB0 /* SJBaseTabbarController.h */,
+				4CF9EC0B1DDD871900287EB0 /* SJBaseTabbarController.m */,
+				4CF9EC1A1DDD90B900287EB0 /* SJBaseViewController.h */,
+				4CF9EC1B1DDD90B900287EB0 /* SJBaseViewController.m */,
+				4CF9EC1D1DDD9B6300287EB0 /* SJNavigationController.h */,
+				4CF9EC1E1DDD9B6300287EB0 /* SJNavigationController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		647DC2E7BE903FA434B07519 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55A4C99B8C24994DB085B425 /* libPods-IngKe.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4CF9EBDB1DDD837000287EB0 /* IngKe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CF9EBF31DDD837000287EB0 /* Build configuration list for PBXNativeTarget "IngKe" */;
+			buildPhases = (
+				B791147CC888A6B365FF3D2F /* [CP] Check Pods Manifest.lock */,
+				4CF9EBD81DDD837000287EB0 /* Sources */,
+				4CF9EBD91DDD837000287EB0 /* Frameworks */,
+				4CF9EBDA1DDD837000287EB0 /* Resources */,
+				34B35066D6BD8661FECF23A8 /* [CP] Embed Pods Frameworks */,
+				CF02F8A556F36760F59F32D0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IngKe;
+			productName = IngKe;
+			productReference = 4CF9EBDC1DDD837000287EB0 /* IngKe.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4CF9EBD41DDD837000287EB0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SJ;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = qust;
+				TargetAttributes = {
+					4CF9EBDB1DDD837000287EB0 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 4CF9EBD71DDD837000287EB0 /* Build configuration list for PBXProject "IngKe" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4CF9EBD31DDD837000287EB0;
+			productRefGroup = 4CF9EBDD1DDD837000287EB0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4CF9EBDB1DDD837000287EB0 /* IngKe */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4CF9EBDA1DDD837000287EB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CF9EBEC1DDD837000287EB0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		34B35066D6BD8661FECF23A8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IngKe/Pods-IngKe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B791147CC888A6B365FF3D2F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CF02F8A556F36760F59F32D0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IngKe/Pods-IngKe-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4CF9EBD81DDD837000287EB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CF9EC1F1DDD9B6300287EB0 /* SJNavigationController.m in Sources */,
+				4CF9EC161DDD903E00287EB0 /* SJTabBar.m in Sources */,
+				4CF9EC1C1DDD90B900287EB0 /* SJBaseViewController.m in Sources */,
+				4CF9EBE41DDD837000287EB0 /* AppDelegate.m in Sources */,
+				4CF9EC0C1DDD871900287EB0 /* SJBaseTabbarController.m in Sources */,
+				4CF9EBE11DDD837000287EB0 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4CF9EBF11DDD837000287EB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4CF9EBF21DDD837000287EB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4CF9EBF41DDD837000287EB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4674082BE8A0803789801A9D /* Pods-IngKe.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = "";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Ingke/IngKe.pch";
+				INFOPLIST_FILE = IngKe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = qust.IngKe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4CF9EBF51DDD837000287EB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CFE84401CD9C9C792E92BFB /* Pods-IngKe.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = "";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Ingke/IngKe.pch";
+				INFOPLIST_FILE = IngKe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = qust.IngKe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4CF9EBD71DDD837000287EB0 /* Build configuration list for PBXProject "IngKe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CF9EBF11DDD837000287EB0 /* Debug */,
+				4CF9EBF21DDD837000287EB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CF9EBF31DDD837000287EB0 /* Build configuration list for PBXNativeTarget "IngKe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CF9EBF41DDD837000287EB0 /* Debug */,
+				4CF9EBF51DDD837000287EB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4CF9EBD41DDD837000287EB0 /* Project object */;
+}
