@@ -11,8 +11,11 @@
 @interface SJTabBar ()
 
 @property (nonatomic, strong) UIImageView *bgView;
+@property (nonatomic, weak) UIButton *cameraBtn;
 @property (nonatomic, strong) NSArray *datalist;
+
 @property (nonatomic, weak) UIButton *selectedBtn;
+
 
 @end
 
@@ -22,6 +25,7 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
+        
         [self addSubview:self.bgView];
         
         for (int i = 0; i < self.datalist.count; i++) {
@@ -40,17 +44,27 @@
             [self addSubview:btn];
         }
     }
+    
+    UIButton *cameraBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    _cameraBtn = cameraBtn;
+    cameraBtn.tag = LiveTypeCenter;
+    [cameraBtn setBackgroundImage:[UIImage imageNamed:@"tab_launch"] forState:UIControlStateNormal];
+    [cameraBtn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self addSubview:cameraBtn];
+    
     return self;
 }
 
 - (void)btnClick:(UIButton *)btn
 {
+    !_tabbarClicked?:_tabbarClicked(self, btn.tag);
+    
+    if (btn.tag == LiveTypeCenter) return;
+    
     // 改变按钮状态
     _selectedBtn.selected = NO;
     btn.selected = !btn.selected;
     _selectedBtn = btn;
-    
-    !_tabbarClicked?:_tabbarClicked(self, btn.tag - 100);
     
     // 放大效果
     [UIView animateWithDuration:0.2 animations:^{
@@ -67,15 +81,17 @@
     [super layoutSubviews];
     
     self.bgView.frame = self.bounds;
-    CGFloat width = self.frame.size.width / self.datalist.count;
+    CGFloat width = self.width / self.datalist.count;
     
     int count = 0;
     for (UIView *btn in self.subviews) {
         if ([btn isKindOfClass:[UIButton class]]) {
-            btn.frame = CGRectMake(width * count++, 0, width, self.frame.size.height);
+            btn.frame = CGRectMake(width * count++, 0, width, self.height);
         }
-      
     }
+    
+    [self.cameraBtn sizeToFit];
+    self.cameraBtn.center = CGPointMake(self.centerX, 0);
 
 }
 

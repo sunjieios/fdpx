@@ -8,8 +8,8 @@
 
 #import "SJBaseTabbarController.h"
 #import "SJTabBar.h"
-#import "SJBaseViewController.h"
 #import "SJNavigationController.h"
+#import "SJHomeController.h"
 
 @interface SJBaseTabbarController ()
 
@@ -22,7 +22,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
  
-    NSMutableArray *vcTitleArr = [NSMutableArray arrayWithObjects:@"SJBaseViewController", @"SJBaseViewController", nil];
+    NSMutableArray *vcTitleArr = [NSMutableArray arrayWithObjects:@"SJHomeController", @"SJHomeController", nil];
     for (int i = 0; i < vcTitleArr.count; i++) {
         SJBaseViewController *vc = [[NSClassFromString(vcTitleArr[i]) alloc] init];
         SJNavigationController *nc = [[SJNavigationController alloc] initWithRootViewController:vc];
@@ -36,10 +36,17 @@
      */
     self.viewControllers = vcTitleArr;
     SJTabBar *tabbar = [[SJTabBar alloc] initWithFrame:self.tabBar.bounds];
-    tabbar.tabbarClicked = ^ void(SJTabBar *tabbar, NSInteger index) {
-        ws.selectedIndex = index;
+    tabbar.tabbarClicked = ^ void(SJTabBar *tabbar, LiveType type) {
+        if (type == LiveTypeCenter) {
+            NSLog(@"\n%s-----%d", __func__, __LINE__);
+        } else {
+            ws.selectedIndex = type - LiveTypeLeft;
+        }
     };
     [self.tabBar addSubview:tabbar];
+    
+    [[UITabBar appearance] setShadowImage:[UIImage new]];
+    [[UITabBar appearance] setBackgroundImage:[UIImage new]];
 }
 
 @end

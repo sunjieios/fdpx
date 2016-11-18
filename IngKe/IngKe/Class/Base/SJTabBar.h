@@ -8,8 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+typedef enum : NSUInteger {
+    LiveTypeLeft    =   100,
+    LiveTypeRight,
+    LiveTypeCenter,
+} LiveType;
+
 @interface SJTabBar : UIView
 
-@property (nonatomic, copy) void (^tabbarClicked)(SJTabBar *tabbar, NSInteger index);
+@property (nonatomic, copy) void (^tabbarClicked)(SJTabBar *tabbar, LiveType type);
 
 @end

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4AFE59BC5463DB63360FCC7E /* libPods-IngKe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55A4C99B8C24994DB085B425 /* libPods-IngKe.a */; };
+		4CEB0BA41DDEDB5C00EFE192 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CEB0BA31DDEDB5C00EFE192 /* UIView+Extension.m */; };
+		4CEB0BB11DDEEAAF00EFE192 /* SJHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CEB0BB01DDEEAAF00EFE192 /* SJHomeController.m */; };
 		4CF9EBE11DDD837000287EB0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF9EBE01DDD837000287EB0 /* main.m */; };
 		4CF9EBE41DDD837000287EB0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF9EBE31DDD837000287EB0 /* AppDelegate.m */; };
 		4CF9EBEC1DDD837000287EB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CF9EBEB1DDD837000287EB0 /* Assets.xcassets */; };
@@ -20,6 +22,10 @@
 /* Begin PBXFileReference section */
 		2CFE84401CD9C9C792E92BFB /* Pods-IngKe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IngKe.release.xcconfig"; path = "Pods/Target Support Files/Pods-IngKe/Pods-IngKe.release.xcconfig"; sourceTree = "<group>"; };
 		4674082BE8A0803789801A9D /* Pods-IngKe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IngKe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IngKe/Pods-IngKe.debug.xcconfig"; sourceTree = "<group>"; };
+		4CEB0BA21DDEDB5C00EFE192 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		4CEB0BA31DDEDB5C00EFE192 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		4CEB0BAF1DDEEAAF00EFE192 /* SJHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJHomeController.h; sourceTree = "<group>"; };
+		4CEB0BB01DDEEAAF00EFE192 /* SJHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJHomeController.m; sourceTree = "<group>"; };
 		4CF9EBDC1DDD837000287EB0 /* IngKe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IngKe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CF9EBE01DDD837000287EB0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4CF9EBE21DDD837000287EB0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
@@ -58,6 +64,61 @@
 				2CFE84401CD9C9C792E92BFB /* Pods-IngKe.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		4CEB0BA51DDEDB7B00EFE192 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		4CEB0BA61DDEE43600EFE192 /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
+		4CEB0BAA1DDEEA8C00EFE192 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4CEB0BAB1DDEEA8C00EFE192 /* Handlers */,
+				4CEB0BAC1DDEEA8C00EFE192 /* Models */,
+				4CEB0BAD1DDEEA8C00EFE192 /* ViewControllers */,
+				4CEB0BAE1DDEEA8C00EFE192 /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		4CEB0BAB1DDEEA8C00EFE192 /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Handlers;
+			sourceTree = "<group>";
+		};
+		4CEB0BAC1DDEEA8C00EFE192 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4CEB0BAD1DDEEA8C00EFE192 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4CEB0BAF1DDEEAAF00EFE192 /* SJHomeController.h */,
+				4CEB0BB01DDEEAAF00EFE192 /* SJHomeController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4CEB0BAE1DDEEA8C00EFE192 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		4CF9EBD31DDD837000287EB0 = {
@@ -101,14 +162,12 @@
 		4CF9EBF61DDD850900287EB0 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				4CEB0BAA1DDEEA8C00EFE192 /* Home */,
 				4CF9EBF71DDD850900287EB0 /* Base */,
 				4CF9EBF81DDD850900287EB0 /* Helpers */,
-				4CF9EBFB1DDD850900287EB0 /* Lib */,
 				4CF9EBFC1DDD850900287EB0 /* Live */,
 				4CF9EBFF1DDD850900287EB0 /* Me */,
-				4CF9EC031DDD850900287EB0 /* NetWork */,
 				4CF9EC041DDD850900287EB0 /* Other */,
-				4CF9EC051DDD850900287EB0 /* Show */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -125,6 +184,8 @@
 		4CF9EBF81DDD850900287EB0 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				4CEB0BA61DDEE43600EFE192 /* NetWork */,
+				4CEB0BA51DDEDB7B00EFE192 /* Lib */,
 				4CF9EBF91DDD850900287EB0 /* Categories */,
 				4CF9EBFA1DDD850900287EB0 /* Tools */,
 			);
@@ -134,6 +195,8 @@
 		4CF9EBF91DDD850900287EB0 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				4CEB0BA21DDEDB5C00EFE192 /* UIView+Extension.h */,
+				4CEB0BA31DDEDB5C00EFE192 /* UIView+Extension.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -143,13 +206,6 @@
 			children = (
 			);
 			path = Tools;
-			sourceTree = "<group>";
-		};
-		4CF9EBFB1DDD850900287EB0 /* Lib */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Lib;
 			sourceTree = "<group>";
 		};
 		4CF9EBFC1DDD850900287EB0 /* Live */ = {
@@ -206,13 +262,6 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		4CF9EC031DDD850900287EB0 /* NetWork */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = NetWork;
-			sourceTree = "<group>";
-		};
 		4CF9EC041DDD850900287EB0 /* Other */ = {
 			isa = PBXGroup;
 			children = (
@@ -221,45 +270,6 @@
 				4CF9EC131DDD8D2200287EB0 /* SJMacros.h */,
 			);
 			path = Other;
-			sourceTree = "<group>";
-		};
-		4CF9EC051DDD850900287EB0 /* Show */ = {
-			isa = PBXGroup;
-			children = (
-				4CF9EC061DDD850900287EB0 /* Handlers */,
-				4CF9EC071DDD850900287EB0 /* Models */,
-				4CF9EC081DDD850900287EB0 /* ViewControllers */,
-				4CF9EC091DDD850900287EB0 /* Views */,
-			);
-			path = Show;
-			sourceTree = "<group>";
-		};
-		4CF9EC061DDD850900287EB0 /* Handlers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Handlers;
-			sourceTree = "<group>";
-		};
-		4CF9EC071DDD850900287EB0 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		4CF9EC081DDD850900287EB0 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		4CF9EC091DDD850900287EB0 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		4CF9EC181DDD904E00287EB0 /* View */ = {
@@ -416,9 +426,11 @@
 				4CF9EC1F1DDD9B6300287EB0 /* SJNavigationController.m in Sources */,
 				4CF9EC161DDD903E00287EB0 /* SJTabBar.m in Sources */,
 				4CF9EC1C1DDD90B900287EB0 /* SJBaseViewController.m in Sources */,
+				4CEB0BA41DDEDB5C00EFE192 /* UIView+Extension.m in Sources */,
 				4CF9EBE41DDD837000287EB0 /* AppDelegate.m in Sources */,
 				4CF9EC0C1DDD871900287EB0 /* SJBaseTabbarController.m in Sources */,
 				4CF9EBE11DDD837000287EB0 /* main.m in Sources */,
+				4CEB0BB11DDEEAAF00EFE192 /* SJHomeController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,6 +532,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Ingke/IngKe.pch";
 				INFOPLIST_FILE = IngKe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -537,6 +550,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Ingke/IngKe.pch";
 				INFOPLIST_FILE = IngKe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

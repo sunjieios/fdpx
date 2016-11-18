@@ -18,6 +18,11 @@
 {
     [super viewDidLoad];
     
+    self.navigationBar.barTintColor = [UIColor colorWithRed:36/255.0 green:215/255.0 blue:200/255.0 alpha:1];
+    self.navigationBar.tintColor = [UIColor whiteColor];
+
+    [self.navigationBar setBackgroundImage:[UIImage imageNamed:@"global_tittle_bg"] forBarMetrics:UIBarMetricsCompact];
+    
 }
 
 
