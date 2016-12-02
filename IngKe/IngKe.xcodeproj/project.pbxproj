@@ -17,6 +17,10 @@
 		4CF9EC161DDD903E00287EB0 /* SJTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF9EC151DDD903E00287EB0 /* SJTabBar.m */; };
 		4CF9EC1C1DDD90B900287EB0 /* SJBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF9EC1B1DDD90B900287EB0 /* SJBaseViewController.m */; };
 		4CF9EC1F1DDD9B6300287EB0 /* SJNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF9EC1E1DDD9B6300287EB0 /* SJNavigationController.m */; };
+		4CF9FA121DF10A6700FE4876 /* SJFocusController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF9FA111DF10A6700FE4876 /* SJFocusController.m */; };
+		4CF9FA151DF10A7900FE4876 /* SJHotController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF9FA141DF10A7900FE4876 /* SJHotController.m */; };
+		4CF9FA181DF10A8600FE4876 /* SJNearController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF9FA171DF10A8600FE4876 /* SJNearController.m */; };
+		4CF9FA1B1DF118BE00FE4876 /* SJHomeTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF9FA1A1DF118BE00FE4876 /* SJHomeTopView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +46,14 @@
 		4CF9EC1B1DDD90B900287EB0 /* SJBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJBaseViewController.m; sourceTree = "<group>"; };
 		4CF9EC1D1DDD9B6300287EB0 /* SJNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJNavigationController.h; sourceTree = "<group>"; };
 		4CF9EC1E1DDD9B6300287EB0 /* SJNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJNavigationController.m; sourceTree = "<group>"; };
+		4CF9FA101DF10A6700FE4876 /* SJFocusController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJFocusController.h; sourceTree = "<group>"; };
+		4CF9FA111DF10A6700FE4876 /* SJFocusController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJFocusController.m; sourceTree = "<group>"; };
+		4CF9FA131DF10A7900FE4876 /* SJHotController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJHotController.h; sourceTree = "<group>"; };
+		4CF9FA141DF10A7900FE4876 /* SJHotController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJHotController.m; sourceTree = "<group>"; };
+		4CF9FA161DF10A8600FE4876 /* SJNearController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJNearController.h; sourceTree = "<group>"; };
+		4CF9FA171DF10A8600FE4876 /* SJNearController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJNearController.m; sourceTree = "<group>"; };
+		4CF9FA191DF118BE00FE4876 /* SJHomeTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJHomeTopView.h; sourceTree = "<group>"; };
+		4CF9FA1A1DF118BE00FE4876 /* SJHomeTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJHomeTopView.m; sourceTree = "<group>"; };
 		55A4C99B8C24994DB085B425 /* libPods-IngKe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IngKe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -110,6 +122,12 @@
 			children = (
 				4CEB0BAF1DDEEAAF00EFE192 /* SJHomeController.h */,
 				4CEB0BB01DDEEAAF00EFE192 /* SJHomeController.m */,
+				4CF9FA101DF10A6700FE4876 /* SJFocusController.h */,
+				4CF9FA111DF10A6700FE4876 /* SJFocusController.m */,
+				4CF9FA131DF10A7900FE4876 /* SJHotController.h */,
+				4CF9FA141DF10A7900FE4876 /* SJHotController.m */,
+				4CF9FA161DF10A8600FE4876 /* SJNearController.h */,
+				4CF9FA171DF10A8600FE4876 /* SJNearController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -117,6 +135,8 @@
 		4CEB0BAE1DDEEA8C00EFE192 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4CF9FA191DF118BE00FE4876 /* SJHomeTopView.h */,
+				4CF9FA1A1DF118BE00FE4876 /* SJHomeTopView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -423,13 +443,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CF9FA121DF10A6700FE4876 /* SJFocusController.m in Sources */,
 				4CF9EC1F1DDD9B6300287EB0 /* SJNavigationController.m in Sources */,
+				4CF9FA181DF10A8600FE4876 /* SJNearController.m in Sources */,
 				4CF9EC161DDD903E00287EB0 /* SJTabBar.m in Sources */,
 				4CF9EC1C1DDD90B900287EB0 /* SJBaseViewController.m in Sources */,
 				4CEB0BA41DDEDB5C00EFE192 /* UIView+Extension.m in Sources */,
 				4CF9EBE41DDD837000287EB0 /* AppDelegate.m in Sources */,
+				4CF9FA151DF10A7900FE4876 /* SJHotController.m in Sources */,
 				4CF9EC0C1DDD871900287EB0 /* SJBaseTabbarController.m in Sources */,
 				4CF9EBE11DDD837000287EB0 /* main.m in Sources */,
+				4CF9FA1B1DF118BE00FE4876 /* SJHomeTopView.m in Sources */,
 				4CEB0BB11DDEEAAF00EFE192 /* SJHomeController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -529,6 +553,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4674082BE8A0803789801A9D /* Pods-IngKe.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = "";
@@ -547,6 +572,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2CFE84401CD9C9C792E92BFB /* Pods-IngKe.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = "";

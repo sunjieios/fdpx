@@ -22,7 +22,6 @@
     self.navigationBar.tintColor = [UIColor whiteColor];
 
     [self.navigationBar setBackgroundImage:[UIImage imageNamed:@"global_tittle_bg"] forBarMetrics:UIBarMetricsCompact];
-    
 }
 
 

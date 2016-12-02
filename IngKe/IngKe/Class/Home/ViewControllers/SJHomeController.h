@@ -10,4 +10,5 @@
 
 @interface SJHomeController : SJBaseViewController
 
+
 @end
