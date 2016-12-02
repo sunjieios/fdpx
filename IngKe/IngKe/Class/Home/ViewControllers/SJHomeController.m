@@ -55,12 +55,13 @@
 }
 
 #pragma mark - UIScrollViewDelegate
-
+// 懒加载控制器
 - (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView
 {
     NSInteger index = scrollView.contentOffset.x / SCREEN_WIDTH;
     [self.topView scrolling:index];
     UIViewController *vc = self.childViewControllers[index];
+    // 判断控制器是否加载过
     if ([vc isViewLoaded]) return;
     vc.view.frame = scrollView.bounds;
     vc.view.x = SCREEN_WIDTH * index;

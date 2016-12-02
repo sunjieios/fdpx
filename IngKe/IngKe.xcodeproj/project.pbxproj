@@ -21,6 +21,9 @@
 		4CF9FA151DF10A7900FE4876 /* SJHotController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF9FA141DF10A7900FE4876 /* SJHotController.m */; };
 		4CF9FA181DF10A8600FE4876 /* SJNearController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF9FA171DF10A8600FE4876 /* SJNearController.m */; };
 		4CF9FA1B1DF118BE00FE4876 /* SJHomeTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF9FA1A1DF118BE00FE4876 /* SJHomeTopView.m */; };
+		4CF9FA211DF1566B00FE4876 /* HttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF9FA1E1DF1566B00FE4876 /* HttpTool.m */; };
+		4CF9FA221DF1566B00FE4876 /* UIImageView+SDWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF9FA201DF1566B00FE4876 /* UIImageView+SDWebImage.m */; };
+		4CF9FA251DF156DB00FE4876 /* SJHttpConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF9FA241DF156DB00FE4876 /* SJHttpConst.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +57,12 @@
 		4CF9FA171DF10A8600FE4876 /* SJNearController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJNearController.m; sourceTree = "<group>"; };
 		4CF9FA191DF118BE00FE4876 /* SJHomeTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJHomeTopView.h; sourceTree = "<group>"; };
 		4CF9FA1A1DF118BE00FE4876 /* SJHomeTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJHomeTopView.m; sourceTree = "<group>"; };
+		4CF9FA1D1DF1566B00FE4876 /* HttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpTool.h; sourceTree = "<group>"; };
+		4CF9FA1E1DF1566B00FE4876 /* HttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpTool.m; sourceTree = "<group>"; };
+		4CF9FA1F1DF1566B00FE4876 /* UIImageView+SDWebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+SDWebImage.h"; sourceTree = "<group>"; };
+		4CF9FA201DF1566B00FE4876 /* UIImageView+SDWebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+SDWebImage.m"; sourceTree = "<group>"; };
+		4CF9FA231DF156DB00FE4876 /* SJHttpConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJHttpConst.h; sourceTree = "<group>"; };
+		4CF9FA241DF156DB00FE4876 /* SJHttpConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJHttpConst.m; sourceTree = "<group>"; };
 		55A4C99B8C24994DB085B425 /* libPods-IngKe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IngKe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -88,6 +97,12 @@
 		4CEB0BA61DDEE43600EFE192 /* NetWork */ = {
 			isa = PBXGroup;
 			children = (
+				4CF9FA231DF156DB00FE4876 /* SJHttpConst.h */,
+				4CF9FA241DF156DB00FE4876 /* SJHttpConst.m */,
+				4CF9FA1D1DF1566B00FE4876 /* HttpTool.h */,
+				4CF9FA1E1DF1566B00FE4876 /* HttpTool.m */,
+				4CF9FA1F1DF1566B00FE4876 /* UIImageView+SDWebImage.h */,
+				4CF9FA201DF1566B00FE4876 /* UIImageView+SDWebImage.m */,
 			);
 			path = NetWork;
 			sourceTree = "<group>";
@@ -448,12 +463,15 @@
 				4CF9FA181DF10A8600FE4876 /* SJNearController.m in Sources */,
 				4CF9EC161DDD903E00287EB0 /* SJTabBar.m in Sources */,
 				4CF9EC1C1DDD90B900287EB0 /* SJBaseViewController.m in Sources */,
+				4CF9FA211DF1566B00FE4876 /* HttpTool.m in Sources */,
 				4CEB0BA41DDEDB5C00EFE192 /* UIView+Extension.m in Sources */,
 				4CF9EBE41DDD837000287EB0 /* AppDelegate.m in Sources */,
+				4CF9FA221DF1566B00FE4876 /* UIImageView+SDWebImage.m in Sources */,
 				4CF9FA151DF10A7900FE4876 /* SJHotController.m in Sources */,
 				4CF9EC0C1DDD871900287EB0 /* SJBaseTabbarController.m in Sources */,
 				4CF9EBE11DDD837000287EB0 /* main.m in Sources */,
 				4CF9FA1B1DF118BE00FE4876 /* SJHomeTopView.m in Sources */,
+				4CF9FA251DF156DB00FE4876 /* SJHttpConst.m in Sources */,
 				4CEB0BB11DDEEAAF00EFE192 /* SJHomeController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
