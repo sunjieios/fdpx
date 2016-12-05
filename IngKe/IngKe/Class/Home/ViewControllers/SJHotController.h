@@ -8,6 +8,6 @@
 
 #import "SJBaseViewController.h"
 
-@interface SJHotController : SJBaseViewController
+@interface SJHotController : UITableViewController
 
 @end

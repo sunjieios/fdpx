@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		4AFE59BC5463DB63360FCC7E /* libPods-IngKe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55A4C99B8C24994DB085B425 /* libPods-IngKe.a */; };
+		4CDC362F1DF540440017808F /* SJHomeHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDC362E1DF540440017808F /* SJHomeHandler.m */; };
+		4CDC36331DF540BE0017808F /* SJBaseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDC36321DF540BE0017808F /* SJBaseHandler.m */; };
+		4CDC36361DF547F90017808F /* SJLiveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDC36351DF547F90017808F /* SJLiveModel.m */; };
+		4CDC36391DF548150017808F /* SJCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDC36381DF548150017808F /* SJCreator.m */; };
+		4CDC363C1DF549660017808F /* MJExtensionConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDC363B1DF549660017808F /* MJExtensionConfig.m */; };
+		4CDC363F1DF55DB70017808F /* SJHotCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDC363E1DF55DB70017808F /* SJHotCell.m */; };
 		4CEB0BA41DDEDB5C00EFE192 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CEB0BA31DDEDB5C00EFE192 /* UIView+Extension.m */; };
 		4CEB0BB11DDEEAAF00EFE192 /* SJHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CEB0BB01DDEEAAF00EFE192 /* SJHomeController.m */; };
 		4CF9EBE11DDD837000287EB0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF9EBE01DDD837000287EB0 /* main.m */; };
@@ -29,6 +35,18 @@
 /* Begin PBXFileReference section */
 		2CFE84401CD9C9C792E92BFB /* Pods-IngKe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IngKe.release.xcconfig"; path = "Pods/Target Support Files/Pods-IngKe/Pods-IngKe.release.xcconfig"; sourceTree = "<group>"; };
 		4674082BE8A0803789801A9D /* Pods-IngKe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IngKe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IngKe/Pods-IngKe.debug.xcconfig"; sourceTree = "<group>"; };
+		4CDC362D1DF540440017808F /* SJHomeHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJHomeHandler.h; sourceTree = "<group>"; };
+		4CDC362E1DF540440017808F /* SJHomeHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJHomeHandler.m; sourceTree = "<group>"; };
+		4CDC36311DF540BE0017808F /* SJBaseHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJBaseHandler.h; sourceTree = "<group>"; };
+		4CDC36321DF540BE0017808F /* SJBaseHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJBaseHandler.m; sourceTree = "<group>"; };
+		4CDC36341DF547F90017808F /* SJLiveModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJLiveModel.h; sourceTree = "<group>"; };
+		4CDC36351DF547F90017808F /* SJLiveModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJLiveModel.m; sourceTree = "<group>"; };
+		4CDC36371DF548150017808F /* SJCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJCreator.h; sourceTree = "<group>"; };
+		4CDC36381DF548150017808F /* SJCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJCreator.m; sourceTree = "<group>"; };
+		4CDC363A1DF549660017808F /* MJExtensionConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtensionConfig.h; sourceTree = "<group>"; };
+		4CDC363B1DF549660017808F /* MJExtensionConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJExtensionConfig.m; sourceTree = "<group>"; };
+		4CDC363D1DF55DB70017808F /* SJHotCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJHotCell.h; sourceTree = "<group>"; };
+		4CDC363E1DF55DB70017808F /* SJHotCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJHotCell.m; sourceTree = "<group>"; };
 		4CEB0BA21DDEDB5C00EFE192 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		4CEB0BA31DDEDB5C00EFE192 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		4CEB0BAF1DDEEAAF00EFE192 /* SJHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJHomeController.h; sourceTree = "<group>"; };
@@ -87,6 +105,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		4CDC36301DF540A40017808F /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				4CDC36311DF540BE0017808F /* SJBaseHandler.h */,
+				4CDC36321DF540BE0017808F /* SJBaseHandler.m */,
+			);
+			name = Handlers;
+			sourceTree = "<group>";
+		};
 		4CEB0BA51DDEDB7B00EFE192 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +148,8 @@
 		4CEB0BAB1DDEEA8C00EFE192 /* Handlers */ = {
 			isa = PBXGroup;
 			children = (
+				4CDC362D1DF540440017808F /* SJHomeHandler.h */,
+				4CDC362E1DF540440017808F /* SJHomeHandler.m */,
 			);
 			path = Handlers;
 			sourceTree = "<group>";
@@ -128,6 +157,10 @@
 		4CEB0BAC1DDEEA8C00EFE192 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				4CDC36341DF547F90017808F /* SJLiveModel.h */,
+				4CDC36351DF547F90017808F /* SJLiveModel.m */,
+				4CDC36371DF548150017808F /* SJCreator.h */,
+				4CDC36381DF548150017808F /* SJCreator.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -152,6 +185,8 @@
 			children = (
 				4CF9FA191DF118BE00FE4876 /* SJHomeTopView.h */,
 				4CF9FA1A1DF118BE00FE4876 /* SJHomeTopView.m */,
+				4CDC363D1DF55DB70017808F /* SJHotCell.h */,
+				4CDC363E1DF55DB70017808F /* SJHotCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -210,6 +245,7 @@
 		4CF9EBF71DDD850900287EB0 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				4CDC36301DF540A40017808F /* Handlers */,
 				4CF9EC191DDD905900287EB0 /* Controller */,
 				4CF9EC181DDD904E00287EB0 /* View */,
 			);
@@ -300,6 +336,8 @@
 		4CF9EC041DDD850900287EB0 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				4CDC363A1DF549660017808F /* MJExtensionConfig.h */,
+				4CDC363B1DF549660017808F /* MJExtensionConfig.m */,
 				4CF9EBE21DDD837000287EB0 /* AppDelegate.h */,
 				4CF9EBE31DDD837000287EB0 /* AppDelegate.m */,
 				4CF9EC131DDD8D2200287EB0 /* SJMacros.h */,
@@ -464,14 +502,20 @@
 				4CF9EC161DDD903E00287EB0 /* SJTabBar.m in Sources */,
 				4CF9EC1C1DDD90B900287EB0 /* SJBaseViewController.m in Sources */,
 				4CF9FA211DF1566B00FE4876 /* HttpTool.m in Sources */,
+				4CDC36331DF540BE0017808F /* SJBaseHandler.m in Sources */,
+				4CDC363F1DF55DB70017808F /* SJHotCell.m in Sources */,
 				4CEB0BA41DDEDB5C00EFE192 /* UIView+Extension.m in Sources */,
+				4CDC363C1DF549660017808F /* MJExtensionConfig.m in Sources */,
 				4CF9EBE41DDD837000287EB0 /* AppDelegate.m in Sources */,
+				4CDC36391DF548150017808F /* SJCreator.m in Sources */,
 				4CF9FA221DF1566B00FE4876 /* UIImageView+SDWebImage.m in Sources */,
+				4CDC36361DF547F90017808F /* SJLiveModel.m in Sources */,
 				4CF9FA151DF10A7900FE4876 /* SJHotController.m in Sources */,
 				4CF9EC0C1DDD871900287EB0 /* SJBaseTabbarController.m in Sources */,
 				4CF9EBE11DDD837000287EB0 /* main.m in Sources */,
 				4CF9FA1B1DF118BE00FE4876 /* SJHomeTopView.m in Sources */,
 				4CF9FA251DF156DB00FE4876 /* SJHttpConst.m in Sources */,
+				4CDC362F1DF540440017808F /* SJHomeHandler.m in Sources */,
 				4CEB0BB11DDEEAAF00EFE192 /* SJHomeController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

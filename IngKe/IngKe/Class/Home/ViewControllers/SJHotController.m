@@ -7,32 +7,65 @@
 //
 
 #import "SJHotController.h"
+#import "SJHomeHandler.h"
+#import "SJHotCell.h"
 
 @interface SJHotController ()
 
+@property (nonatomic, strong) NSMutableArray *dataList;
+
 @end
+
+static NSString *cellID = @"SJHotControllerCellID";
 
 @implementation SJHotController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor orangeColor];
+    [self createUI];
+    [self loadData];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)createUI
+{
+    self.tableView.rowHeight = SCREEN_WIDTH + 70;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)loadData
+{
+    [SJHomeHandler executeGetHotLiveTaskWithSuccess:^(id obj) {
+        [self.dataList addObjectsFromArray:obj];
+        [self.tableView reloadData];
+    } failed:nil];
 }
-*/
+
+#pragma mark - tableViewDelegate
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return self.dataList.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    SJHotCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
+    if (cell == nil) {
+        cell = [[SJHotCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
+    }
+    
+    cell.model = self.dataList[indexPath.row];
+    return cell;
+}
+
+#pragma mark - 懒加载
+
+- (NSMutableArray *)dataList
+{
+    if (_dataList == nil) {
+        _dataList = [NSMutableArray array];
+    }
+    return _dataList;
+}
 
 @end

@@ -49,13 +49,17 @@
     NSString * url = [SERVER_HOST stringByAppendingPathComponent:path];
     
     [[AFHttpClient sharedClient] GET:url parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        
-        success(responseObject);
-        
+        @try {
+            success(responseObject);
+        } @catch (NSException *exception) {
+            NSLog(@"\n*******************************\n exception = %@ \n*******************************", exception);
+        }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        
-        failure(error);
-        
+        NSLog(@"\n*******************************\n {\n path = %@\n para = %@\n error = %@ \n*******************************}", path, params, error);
+        [SVProgressHUD showErrorWithStatus:@"网络请求失败"];
+        if (failure) {
+           failure(error);
+        }
     }];
 
 }
