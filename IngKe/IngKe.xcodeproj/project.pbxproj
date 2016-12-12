@@ -14,6 +14,8 @@
 		4CDC36391DF548150017808F /* SJCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDC36381DF548150017808F /* SJCreator.m */; };
 		4CDC363C1DF549660017808F /* MJExtensionConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDC363B1DF549660017808F /* MJExtensionConfig.m */; };
 		4CDC363F1DF55DB70017808F /* SJHotCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDC363E1DF55DB70017808F /* SJHotCell.m */; };
+		4CDDE3551DFE9C7600C63001 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CDDE3541DFE9C7600C63001 /* IJKMediaFramework.framework */; };
+		4CDDE3581DFE9F0E00C63001 /* SJPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDDE3571DFE9F0E00C63001 /* SJPlayerViewController.m */; };
 		4CEB0BA41DDEDB5C00EFE192 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CEB0BA31DDEDB5C00EFE192 /* UIView+Extension.m */; };
 		4CEB0BB11DDEEAAF00EFE192 /* SJHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CEB0BB01DDEEAAF00EFE192 /* SJHomeController.m */; };
 		4CF9EBE11DDD837000287EB0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF9EBE01DDD837000287EB0 /* main.m */; };
@@ -47,6 +49,9 @@
 		4CDC363B1DF549660017808F /* MJExtensionConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJExtensionConfig.m; sourceTree = "<group>"; };
 		4CDC363D1DF55DB70017808F /* SJHotCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJHotCell.h; sourceTree = "<group>"; };
 		4CDC363E1DF55DB70017808F /* SJHotCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJHotCell.m; sourceTree = "<group>"; };
+		4CDDE3541DFE9C7600C63001 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
+		4CDDE3561DFE9F0E00C63001 /* SJPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJPlayerViewController.h; sourceTree = "<group>"; };
+		4CDDE3571DFE9F0E00C63001 /* SJPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJPlayerViewController.m; sourceTree = "<group>"; };
 		4CEB0BA21DDEDB5C00EFE192 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		4CEB0BA31DDEDB5C00EFE192 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		4CEB0BAF1DDEEAAF00EFE192 /* SJHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJHomeController.h; sourceTree = "<group>"; };
@@ -90,6 +95,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AFE59BC5463DB63360FCC7E /* libPods-IngKe.a in Frameworks */,
+				4CDDE3551DFE9C7600C63001 /* IJKMediaFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,6 +123,7 @@
 		4CEB0BA51DDEDB7B00EFE192 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				4CDDE3541DFE9C7600C63001 /* IJKMediaFramework.framework */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
@@ -176,6 +183,8 @@
 				4CF9FA141DF10A7900FE4876 /* SJHotController.m */,
 				4CF9FA161DF10A8600FE4876 /* SJNearController.h */,
 				4CF9FA171DF10A8600FE4876 /* SJNearController.m */,
+				4CDDE3561DFE9F0E00C63001 /* SJPlayerViewController.h */,
+				4CDDE3571DFE9F0E00C63001 /* SJPlayerViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -506,6 +515,7 @@
 				4CDC363F1DF55DB70017808F /* SJHotCell.m in Sources */,
 				4CEB0BA41DDEDB5C00EFE192 /* UIView+Extension.m in Sources */,
 				4CDC363C1DF549660017808F /* MJExtensionConfig.m in Sources */,
+				4CDDE3581DFE9F0E00C63001 /* SJPlayerViewController.m in Sources */,
 				4CF9EBE41DDD837000287EB0 /* AppDelegate.m in Sources */,
 				4CDC36391DF548150017808F /* SJCreator.m in Sources */,
 				4CF9FA221DF1566B00FE4876 /* UIImageView+SDWebImage.m in Sources */,
@@ -619,6 +629,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/IngKe/Class/Helpers/Lib",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Ingke/IngKe.pch";
 				INFOPLIST_FILE = IngKe/Info.plist;
@@ -638,6 +652,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/IngKe/Class/Helpers/Lib",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Ingke/IngKe.pch";
 				INFOPLIST_FILE = IngKe/Info.plist;

@@ -20,7 +20,7 @@ PODS:
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
-  - SVProgressHUD (2.1)
+  - SVProgressHUD (2.1.2)
   - YYKit (1.0.9):
     - YYKit/no-arc (= 1.0.9)
   - YYKit/no-arc (1.0.9)
@@ -40,9 +40,9 @@ SPEC CHECKSUMS:
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
-  SVProgressHUD: 76eacbf6f547ee13b3b25e2fb42b52d4cad76112
+  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 01dc49298c70b15d51d7e6e72a58d82810f46406
+PODFILE CHECKSUM: 1bdb5a8187079dcc28f1622e5d095d03c7656188
 
 COCOAPODS: 1.0.1

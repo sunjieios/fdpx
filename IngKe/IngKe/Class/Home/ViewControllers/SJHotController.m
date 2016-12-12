@@ -9,6 +9,7 @@
 #import "SJHotController.h"
 #import "SJHomeHandler.h"
 #import "SJHotCell.h"
+#import "SJPlayerViewController.h"
 
 @interface SJHotController ()
 
@@ -56,6 +57,15 @@ static NSString *cellID = @"SJHotControllerCellID";
     
     cell.model = self.dataList[indexPath.row];
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    SJPlayerViewController *playerVc = [SJPlayerViewController new];
+    playerVc.model = self.dataList[indexPath.row];
+    playerVc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:playerVc animated:YES];
 }
 
 #pragma mark - 懒加载

@@ -14,7 +14,7 @@
 + (void)executeGetHotLiveTaskWithSuccess:(SuccessBlock)success failed:(FailedBlock)failed
 {
     [HttpTool getWithPath:API_HotLive params:nil success:^(id responseObject) {
-//        SJLog(@"%@", json);
+//        SJLog(@"%@", responseObject);
         if ([responseObject[@"dm_error"] integerValue]) {
             failed(responseObject);
         } else {
